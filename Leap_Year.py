@@ -8,8 +8,8 @@ def main():
 
     div = x % 4
 
-    if (div == 0) and (x / 100) and (x / 400):
-        print("is zero, is Leap Year\n")
+    if (div % 4 == 0) and (div % 100 == 0) or (div % 400 == 0):
+        print("Yes, is Leap Year\n")
     else:
-        print("Not Leap Year\n")
+        print("No, not leap year\n")
 main()
